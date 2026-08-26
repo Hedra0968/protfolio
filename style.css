@@ -391,7 +391,37 @@ body {
     transform 0.8s ease;
 }
 
+/* Media */
+@media (max-width: 768px) {
+    .hero-buttons, .hero-btns-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .hero-buttons .btn, .hero-btns-container .btn {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
 .scroll-reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+    .skills-section .row > div, 
+    #skills .row > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .skill-card {
+        margin-bottom: 15px;
+    }
 }
