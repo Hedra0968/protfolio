@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hedra Victor | Frontend Web Developer</title>
+    <!-- PWA Manifest Link -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d1117">
+    <!-- Custom SVG Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1117'/><text x='50%' y='65%' font-size='50' font-weight='bold' font-family='sans-serif' fill='%2338bdf8' text-anchor='middle'>HV</text></svg>">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">&lt;Hedra Victor /&gt;</a>
+                <div class="d-flex align-items-center gap-3 order-lg-3">
+                    <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon icon-moon"></i>
+                        <i class="fa-solid fa-sun icon-sun"></i>
+                    </button>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+                    <ul class="navbar-nav gap-2">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Home / Hero Section (Picture on top in Mobile) -->
+        <section id="home" class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center gy-5 flex-column-reverse flex-lg-row">
+                    <div class="col-lg-7 text-center text-lg-start scroll-reveal">
+                        <h1 class="hero-title fw-bold mb-3">Hi, I'm <span class="highlight-text">Hedra Victor</span>
+                        </h1>
+                        <h2 class="hero-subtitle mb-4"><span id="typed-text"></span><span class="cursor">&nbsp;</span>
+                        </h2>
+                        <p class="hero-desc mb-4">
+                            I create clean, responsive, and user-friendly websites that bring ideas to life.
+                        </p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#projects" class="btn btn-primary-custom">View Projects <i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <a href="#contact" class="btn btn-outline-custom">Contact Me</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-center scroll-reveal">
+                        <figure class="profile-avatar-wrapper m-0">
+                            <div class="avatar-glow-ring"></div>
+                            <div class="avatar-inner">
+                                <img src="images/me.png" alt="Hedra Victor" class="profile-img">
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 2. About Section -->
+        <section id="about" class="about-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">About <span class="highlight-text">Me</span></h2>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 scroll-reveal">
+                        <article class="custom-card p-4 rounded-4 h-100">
+                            <h3 class="h4 mb-3 highlight-text"><i class="fa-solid fa-book-open me-2"></i>My Story</h3>
+                            <p class="section-text">
+                                I started my journey in web development by joining the training track to improve my
+                                technical skills and gain practical experience. Since then, I have worked on different
+                                projects, learned from each challenge, and developed my ability to build responsive and
+                                user-friendly websites. I am still learning and improving every day.
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-lg-6 scroll-reveal">
+                        <article class="custom-card p-4 rounded-4 h-100">
+                            <h3 class="h4 mb-3 highlight-text"><i class="fa-solid fa-star me-2"></i>My USP</h3>
+                            <p class="section-text">
+                                What makes me different is that I care about both the quality of the code and the user
+                                experience. I listen carefully to the client's needs, communicate clearly, and focus on
+                                delivering clean, responsive websites on time.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 3. Education Section -->
+        <section id="education" class="education-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">My <span class="highlight-text">Education</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 scroll-reveal">
+                        <article class="custom-card p-4 rounded-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="fa-solid fa-graduation-cap fs-1 highlight-text"></i>
+                                <div>
+                                    <h3 class="h5 mb-1 card-heading">Faculty of Engineering – Computer Engineering</h3>
+                                    <span class="badge-custom">2023 – 2028</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4. Experience Section -->
+        <section id="experience" class="experience-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">Work <span class="highlight-text">Experience</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 scroll-reveal">
+                        <article class="custom-card p-4 rounded-4">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
+                                <h3 class="h4 mb-0 card-heading">Web Designer</h3>
+                                <span class="badge-custom">NTI Training</span>
+                            </div>
+                            <h4 class="h6 highlight-text mb-3">NTI - National Telecommunication Institute | Ministry of
+                                Communications and Information Technology (MCIT)</h4>
+                            <p class="section-text">
+                                Completed a practical training program focused on web design and development. Developed
+                                technical skills in HTML, CSS, JavaScript, Bootstrap, and Firebase, along with soft
+                                skills in teamwork, communication, problem-solving, and leadership. Led a team to design
+                                and develop Medical Services, a responsive web application built using HTML, CSS,
+                                JavaScript, Bootstrap, and Firebase.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 5. Skills Section -->
+        <section id="skills" class="skills-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">My <span class="highlight-text">Skills</span></h2>
+                </div>
+                <!-- Technical Skills -->
+                <div class="mb-5">
+                    <h3 class="h5 text-center mb-4 fw-bold text-uppercase highlight-text scroll-reveal">Technical Skills
+                    </h3>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-brands fa-html5 skill-icon text-danger"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">HTML</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-brands fa-css3-alt skill-icon text-primary"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">CSS</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-brands fa-js skill-icon text-warning"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">JavaScript</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-brands fa-bootstrap skill-icon text-purple"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Bootstrap</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-brands fa-react skill-icon text-info"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">React</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-fire skill-icon text-warning"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Firebase</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-mobile-screen-button skill-icon text-info"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Responsive Web Design</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-code skill-icon text-success"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Web Application Development</h4>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div>
+                    <h3 class="h5 text-center mb-4 fw-bold text-uppercase highlight-text scroll-reveal">Soft Skills</h3>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-people-group skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Teamwork</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-user-tie skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Leadership</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-comments skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Communication</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-lightbulb skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Problem-Solving</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-clock skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Time Management</h4>
+                            </article>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 scroll-reveal">
+                            <article class="skill-card text-center p-4 rounded-4">
+                                <i class="fa-solid fa-sliders skill-icon highlight-text"></i>
+                                <h4 class="h6 mt-3 mb-0 card-heading">Adaptability</h4>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 6. Projects Section (With Image Places) -->
+        <section id="projects" class="projects-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">Featured <span class="highlight-text">Projects</span></h2>
+                </div>
+                <div class="row g-4 justify-content-center align-items-stretch">
+                    <!-- Project 1 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro1.png" alt="Medical Services Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">Medical Services</h3>
+                                    <p class="section-text mb-4">
+                                        A responsive web application built using HTML, CSS, JavaScript, Bootstrap, and
+                                        Firebase.
+                                    </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                        <span class="badge tech-badge">JavaScript</span>
+                                        <span class="badge tech-badge">Bootstrap</span>
+                                        <span class="badge tech-badge">Firebase</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/MedicalServices/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro2.png" alt="E-Commerce Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">Monoline</h3>
+                                    <p class="section-text mb-4">
+                                        A modern agency landing page built with custom layout, smooth navigation, and
+                                        optimized UI components to highlight digital agency services.
+                                    </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/Monoline/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro3.png" alt="Dashboard Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">Smartwarehouse</h3>
+                                    <p class="section-text mb-4">
+                                        A functional inventory & warehouse management dashboard for tracking products,
+                                        monitoring stock status, and managing store data dynamically.
+                                    </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                        <span class="badge tech-badge">JavaScript</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/smartwarehouse/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro4.png" alt="Medical Services Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">Feane</h3>
+                                    <p class="section-text mb-4">
+                                        A responsive food ordering website template featuring product categories, custom
+                                        Bootstrap carousel banners, interactive sliders, and an attractive layout for
+                                        menu displays.
+                                    </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                        <span class="badge tech-badge">Bootstrap</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/Feane/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro6.png" alt="E-Commerce Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">Coffe Shop</h3>
+                                    <p class="section-text mb-4">
+                                        A stylish landing page for a coffee shop showcasing drink menus, modern
+                                        typography, hero sections, and clean navigation for a warm customer experience.
+                                    </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/coffe-shop/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-md-6 col-lg-4 scroll-reveal">
+                        <article class="custom-card project-card rounded-4 overflow-hidden d-flex flex-column h-100">
+                            <div class="project-img-wrapper">
+                                <img src="images/pro5.png" alt="Dashboard Project" class="project-img">
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column justify-content-between flex-grow-1">
+                                <div>
+                                    <h3 class="h4 project-title mb-3 card-heading">TODO LIST</h3>
+                                    <p class="section-text mb-4">
+                                        A dynamic task management web app to add, track, filter, and delete daily
+                                        activities with state persistence using client-side JavaScript. </p>
+                                    <div class="tech-stack mb-4">
+                                        <span class="badge tech-badge">HTML</span>
+                                        <span class="badge tech-badge">CSS</span>
+                                        <span class="badge tech-badge">JavaScript</span>
+                                    </div>
+                                </div>
+                                <a href="https://hedra0968.github.io/TO-DO-LIST/" target="_blank" rel="noopener"
+                                    class="btn btn-primary-custom w-100">Live Demo <i
+                                        class="fa-solid fa-arrow-up-right-from-square ms-1"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- 7. Contact Section -->
+        <section id="contact" class="contact-section py-5">
+            <div class="container">
+                <div class="text-center mb-5 scroll-reveal">
+                    <h2 class="section-title fw-bold">Get In <span class="highlight-text">Touch</span></h2>
+                </div>
+                <!-- Social Media Buttons -->
+                <div class="row justify-content-center mb-5 scroll-reveal">
+                    <div class="col-lg-8">
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="https://wa.me/201226325709" target="_blank" class="social-box whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://www.linkedin.com/in/hedra-victor-4b333033a" target="_blank"
+                                class="social-box linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://github.com/Hedra0968" target="_blank" class="social-box github">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.facebook.com/share/1EuMFM8B3r/" target="_blank"
+                                class="social-box facebook">
+                                <i class="fa-brands fa-facebook-f"></i> Facebook
+                            </a>
+                            <a href="mailto:hedravictor@gmail.com" class="social-box email">
+                                <i class="fa-solid fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Compact Contact Form -->
+                <div class="row justify-content-center scroll-reveal">
+                    <div class="col-md-8 col-lg-6">
+                        <form action="https://formspree.io/f/xbgjrgbq" method="POST"
+                            class="custom-card contact-form p-4 rounded-4">
+                            <div class="mb-3">
+                                <label for="name" class="form-label card-heading">Name</label>
+                                <input type="text" id="name" name="name" class="form-control custom-input"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label card-heading">Email</label>
+                                <input type="email" id="email" name="email" class="form-control custom-input"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label card-heading">Message</label>
+                                <textarea id="message" name="message" rows="4" class="form-control custom-input"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100 mt-2">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Dynamic Colors -->
+    <footer class="custom-footer py-4">
+        <div class="container text-center">
+            <p class="mb-0 footer-text">&copy; 2026 Hedra Victor. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(reg => console.log('SW Registered!', reg))
+                    .catch(err => console.log('SW Error:', err));
+            });
+        }
+    </script>
+</body>
+</html>
